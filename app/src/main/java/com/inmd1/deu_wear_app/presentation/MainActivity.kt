@@ -42,10 +42,10 @@ fun WearApp(greetingName: String) {
          * see d.android.com/wear/compose.
          */
         Column(
-                modifier = Modifier
-                        .fillMaxSize()
-                        .background(MaterialTheme.colors.background),
-                verticalArrangement = Arrangement.Center
+            modifier = Modifier
+                .fillMaxSize()
+                .background(MaterialTheme.colors.background),
+            verticalArrangement = Arrangement.Center
         ) {
             Greeting(greetingName = greetingName)
         }
@@ -55,10 +55,10 @@ fun WearApp(greetingName: String) {
 @Composable
 fun Greeting(greetingName: String) {
     Text(
-            modifier = Modifier.fillMaxWidth(),
-            textAlign = TextAlign.Center,
-            color = MaterialTheme.colors.primary,
-            text = stringResource(R.string.hello_world, greetingName)
+        modifier = Modifier.fillMaxWidth(),
+        textAlign = TextAlign.Center,
+        color = MaterialTheme.colors.primary,
+        text = stringResource(R.string.hello_world, greetingName)
     )
 }
 
